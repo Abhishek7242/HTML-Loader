@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+#breadcrumbs-container{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background: red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#breadcrumbs-container img{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ object-position: center;
+}
+#breadcrumbs-container .breadcrumbs-heading{
+ position: relative;
+    z-index: 11;
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    margin-left: 200px;
+    margin-bottom: 30px;
+
+}
+#breadcrumbs-container .breadcrumbs{
+    color: white;
+
+ position: relative;
+    z-index: 11;
+    margin-left: 200px;
+
+}
+#breadcrumbs-container .breadcrumbs a{
+text-decoration: none;
+color: rgb(185, 185, 185);
+display: inline-block;
+font-size: 30px;
+
+}
+#breadcrumbs-container .breadcrumbs span{
+cursor: default;
+font-size: 30px;
+
+
+}
+#breadcrumbs-container .breadcrumbs a:hover{
+    color: white;
+
+}
+#breadcrumbs-container .breadcrumbs a:hover svg{
+    fill: white;
+
+}
+#breadcrumbs-container .breadcrumbs .active{
+fill: white;
+cursor: no-drop;
+}
+#breadcrumbs-container .breadcrumbs svg{
+height: 40px;
+width: 40px;
+fill:rgb(185, 185, 185);
+
+}
